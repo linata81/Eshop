@@ -1,0 +1,43 @@
+.panels-filter {
+	display: flex;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #959595;
+	font-weight: 500;
+}
+
+.panels-filter__element {
+	flex-shrink: 0;
+	padding: 10px 0;
+	text-align: center;
+	margin-right: 15px;
+}
+
+.panels-filter__name {
+	display: inline-block;
+	position: relative;
+	padding-right: 20px;
+	font-size: 12px;
+	line-height: 1;
+	
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		width: 10px;
+		height: 5px;
+		background-image: url("../img/icons/down-arrow.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	&:hover {
+		cursor: pointer;
+		opacity: 0.8;
+	}
+} 
+

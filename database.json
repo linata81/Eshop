@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "label": "ЖК Генеральский",
+    "rooms": 1,
+    "square": 36,
+    "price": 1000000,
+    "code" : "ГЕН-112.4.2-56",
+    "floor": 4,
+    "floorsHouse" : 12,
+    "like": false,
+    "img" : "flat-plan.png"
+  },
+  {
+    "id": 2,
+    "label": "ЖК Митино Дальнее",
+    "rooms": 2,
+    "square": 56,
+    "price": 4300000,
+    "code" : "МИТ-200.4.2-56",
+    "floor": 2,
+    "floorsHouse" : 12,
+    "like": false,
+    "img" : "flat-plan2.png"
+  },
+  {
+    "id": 3,
+    "label": " ЖК Москва",
+    "rooms": 1,
+    "square": 50,
+    "price": 4000000,
+    "code" : "МОС-999.4.2-10",
+    "floor": 5,
+    "floorsHouse" : 9,
+    "like": false,
+    "img" : "flat-plan.png"
+  },
+  {
+    "id": 4,
+    "label": " ЖК Киров",
+    "rooms": 2,
+    "square": 56,
+    "price": 4150000,
+    "code" : "КИР-118.4.2-01",
+    "floor": 3,
+    "floorsHouse" : 15,
+    "like": false,
+    "img" : "flat-plan2.png"
+  },
+  {
+    "id": 5,
+    "label": " ЖК Киров",
+    "rooms": 3,
+    "square": 68,
+    "price": 5100000,
+    "code" : "КИР-118.4.2-02",
+    "floor": 10,
+    "floorsHouse" : 15,
+    "like": false,
+    "img" : "flat-plan3.png"
+  },
+  {
+    "id": 6,
+    "label": " ЖК Москва",
+    "rooms": 4,
+    "square": 100,
+    "price": 7500000,
+    "code" : "МОС-999.4.2-11",
+    "floor": 12,
+    "floorsHouse" : 12,
+    "like": false,
+    "img" : "flat-plan3.png"
+  },
+  {
+    "id": 7,
+    "label": "ЖК Генеральский",
+    "rooms": 2,
+    "square": 45,
+    "price": 4700000,
+    "code" : "ГЕН-112.4.2-57",
+    "floor": 6,
+    "floorsHouse" : 15,
+    "like": false,
+    "img" : "flat-plan2.png"
+  },
+  {
+    "id": 8,
+    "label": "ЖК Митино Дальнее",
+    "rooms": 1,
+    "square": 40,
+    "price": 2300000,
+    "code" : "МИТ-200.4.2-57",
+    "floor": 2,
+    "floorsHouse" : 9,
+    "like": false,
+    "img" : "flat-plan.png"
+  }
+
+]

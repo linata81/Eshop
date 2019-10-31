@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Eshop</title>
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800|Oswald:700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+  <div class="top-panel">
+		<div class="top-panel__container">
+			<div class="top-panel__title">интернет магазин недвижимости</div>
+			<div class="top-panel__phone"><a href="tel:+8800557755">8 (800) 55-77-55</a></div>
+		</div>
+	</div>
+
+	<div class="logo-wrapper">
+		<div class="logo">
+			<div class="logo__title">КВАДРАТНЫЙ МЕТР</div>
+			<div class="logo__subtitle">купить квартиру в один клик</div>
+		</div>
+	</div>
+
+	<div class="container p-0">
+		<div class="heading-1">Выбор квартир:</div>
+		<div class="filter">
+			<div class="filter__col">
+				<div class="filter__label">Выбор проекта:</div>
+				<select name="" id="" class="filter__dropdown" data-filter-label>
+					<option value="">Все проекты</option>
+					<option value="generalskij">ЖК Генеральский</option>
+					<option value="petrovskij">ЖК Петровский</option>
+					<option value="centralnij">ЖК Центральный</option>
+				</select>
+			</div>
+			<div class="filter__col rooms">
+				<div class="filter__label">Комнат:</div>
+				<div class="rooms__wrapper" data-filter-rooms>
+					<input number="1" type="checkbox" id="rooms_1" class="rooms__checkbox"><label for="rooms_1" class="rooms__btn">1</label>
+					<input number="2" type="checkbox" id="rooms_2" class="rooms__checkbox"><label for="rooms_2" class="rooms__btn">2</label>
+					<input number="3" type="checkbox" id="rooms_3" class="rooms__checkbox"><label for="rooms_3" class="rooms__btn">3</label>
+					<input number="4" type="checkbox" id="rooms_4" class="rooms__checkbox"><label for="rooms_4" class="rooms__btn">4</label>
+				</div>
+			</div>
+			<div class="filter__col">
+				<div class="filter__label">Площадь:</div>
+				<div class="range__wrapper">
+					<div class="range">
+						<label for="" class="range__label">от</label>
+						<input type="number" class="range__input" data-filter-square-min>
+						<div class="range__value">м2</div>
+					</div>
+					<div class="range">
+						<label for="" class="range__label">до</label>
+						<input type="number" class="range__input" data-filter-square-max>
+						<div class="range__value">м2</div>
+					</div>
+				</div>
+			</div>
+			<div class="filter__col">
+				<div class="filter__label">Стоимость:</div>
+				<div class="range__wrapper">
+					<div class="range">
+						<label for="" class="range__label">от</label>
+						<input type="number" class="range__input range__input--price" data-filter-price-min>
+						<div class="range__value">₽</div>
+					</div>
+					<div class="range">
+						<label for="" class="range__label">до</label>
+						<input type="number" class="range__input range__input--price" data-filter-price-max>
+						<div class="range__value">₽</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="filter__buttons" data-show-if-filter>
+			<button class="filter__show">Найдено <span data-filterd-number>много</span> квартир</button>
+			<button class="filter__reset" data-filter-reset>Сбросить фильтр</button>
+		</div>
+	</div>
+
+	<div class="view-options-wrapper">
+		<div class="container">
+			<!-- view-options -->
+			<div class="view-options">
+				<div class="view-options__sort">
+					<label for="sort-cards-by" class="view-options__label">Сортировать</label>
+					<select id="sort-cards-by" name="" id="" class="view-options__select" data-sort>
+						<option value="">нет</option>
+						<option value="priceToUp">по цене ↑</option>
+						<option value="priceToDown">по цене ↓</option>
+						<option value="squareToUp">по площади ↑</option>
+						<option value="squareToDown">по площади ↓</option>
+					</select>
+				</div>
+				<div class="view-options__type">
+					<a data-viewmode-showcase-button href="#" class="view-options__type-item view-options__type-item--active">
+						<i class="fas fa-th-large"></i>
+					</a>
+					<a data-viewmode-listcase-button href="#" class="view-options__type-item">
+						<i class="fas fa-bars"></i>
+					</a>
+				</div>
+			</div>
+			<!-- // view-options -->
+		</div>
+	</div>
+
+  <div data-viewmode-showcase></div>
+
+	<!-- panels-wrapper -->
+	<div data-viewmode-listcase class="panels-wrapper">
+		<div class="container p-0">
+			<div class="panels-filter">
+				<div class="panels-filter__element" style="width: 120px;">
+					<div class="panels-filter__name">Артикул</div>
+				</div>
+				<div class="panels-filter__element" style="width: 160px;">
+					<div class="panels-filter__name">ЖК</div>
+
+				</div>
+				<div class="panels-filter__element" style="width: 70px;">
+					<div class="panels-filter__name">Корпус</div>
+
+				</div>
+				<div class="panels-filter__element" style="width: 70px;">
+					<div class="panels-filter__name">Этаж</div>
+
+				</div>
+				<div class="panels-filter__element" style="width: 70px;">
+					<div class="panels-filter__name">Комнат</div>
+				</div>
+				<div class="panels-filter__element" style="width: 80px;">
+					<div class="panels-filter__name">Площадь</div>
+
+				</div>
+				<div class="panels-filter__element" style="width: 100px;">
+					<div class="panels-filter__name">м2</div>
+
+				</div>
+				<div class="panels-filter__element" style="width: 100px;">
+					<div class="panels-filter__name">Стоимость</div>
+				</div>
+				<div class="panels-filter__element" style="width: 120px;">
+					<div class="panels-filter__name">Продавец</div>
+				</div>
+				<div class="panels-filter__element" style="width: 100px;">
+					<div class="panels-filter__name">Избранное</div>
+				</div>
+			</div>
+      <div data-listcase></div>
+		</div>
+	</div>
+	<!-- // panels-wrapper -->
+
+	<!-- pagination -->
+	<div class="pagination" data-pagination>
+		<a href="#" class="pagination__link">Предыдущая</a>
+		<a href="#" class="pagination__page">1</a>
+		<a href="#" class="pagination__page">2</a>
+		<a href="#" class="pagination__page">3</a>
+		<a href="#" class="pagination__page">4</a>
+		<a href="#" class="pagination__link">Следующая</a>
+	</div>
+	<!-- // pagination -->
+
+	<div class="footer">
+		<div class="contaier">
+			<p>Учебный проект школы <a href="https://webcademy.ru/">WebCademy</a> с курса <a href="https://webcademy.ru/jscourse/">JavaScript разработка</a>. Проект выполнила <a href="#">Наталья Лысак</a>.</p>
+		</div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/View.js"></script>
+	<script src="js/Model.js"></script>
+	<script src="js/Controller.js"></script>
+	<script>Controller.start()</script>
+</body>
+</html>

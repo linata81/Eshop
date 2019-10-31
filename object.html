@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Объект - магазин "Квадратный метр"</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800|Oswald:700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="top-panel">
+		<div class="top-panel__container">
+			<div class="top-panel__title">интернет магазин недвижимости</div>
+			<div class="top-panel__phone"><a href="tel:+8800557755">8 (800) 55-77-55</a></div>
+		</div>
+	</div>
+
+	<div class="logo-wrapper">
+		<div class="logo">
+			<a href ="index.html"class="logo__title">КВАДРАТНЫЙ МЕТР</a>
+			<div class="logo__subtitle">купить квартиру в один клик</div>
+    </div>
+	</div>
+
+	<div class="container p-0">
+		<div class="heading-1">Квартира 
+      <span data-flat-rooms>Студия</span>
+      <span data-flat-square>45,5</span>
+       м2 за
+      <span data-flat-price>4 250 000 ₽</span>
+      <span data-flat-label></span>
+    </div>
+
+		<div class="object">
+
+			<div class="object__photo">
+				<div class="object__photo-wrapper">
+					<img src="img/slider-item/photo.png" alt="">
+				</div>
+
+				<div class="object__photo-prev">
+					<img src="img/slider-item/left.png" alt="">
+				</div>
+				<div class="object__photo-next">
+					<img src="img/slider-item/right.png" alt="">
+				</div>
+
+				<div class="object__photo-slider-nav slider-nav">
+					<div class="slider-nav__dot slider-nav__dot--active"></div>
+					<div class="slider-nav__dot"></div>
+					<div class="slider-nav__dot"></div>
+					<div class="slider-nav__dot"></div>
+				</div>
+			</div>
+
+			<div class="object__desc">
+
+				<div class="object__desc-name">
+					<div class="object__desc-title"><span data-flat-rooms>Студия,</span><span data-flat-square>45,5</span> м2</div>
+					<div class="button-favourite">
+						<i class="fas fa-heart"></i> В избранное
+					</div>
+				</div>
+
+				<div class="object__desc-details">
+
+					<div class="params">
+						<div class="params__item">
+							<div class="params__definition">Корпус</div>
+							<div class="params__value">3</div>
+						</div>
+						<div class="params__item">
+							<div class="params__definition">Секция</div>
+							<div class="params__value">1</div>
+						</div>
+						<div class="params__item">
+							<div class="params__definition">Этаж</div>
+							<div class="params__value" data-flat-floor>8</div>
+						</div>
+						<div class="params__item">
+							<div class="params__definition">Номер</div>
+							<div class="params__value">121</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="details">
+					<div class="details__row">
+						<div class="details__name">Стоимость</div>
+						<div class="details__value details__value--price" data-flat-price>4 200 000 ₽</div>
+					</div>
+					<div class="details__row">
+						<div class="details__name">Цена за м2</div>
+						<div class="details__value" data-flat-price-per-meter>64 000 ₽/м2</div>
+					</div>
+				</div>
+
+				<div class="button-order">Забронировать</div>
+				<div class="button-preview">Записаться на просмотр</div>
+
+			</div>
+
+		</div>
+
+
+	</div>
+
+	<div class="container">
+		<div class="heading-slider">Галерея комплекса</div>
+	</div>
+
+	<div class="slider">
+		<div class="slider__photo-wrapper">
+			<div class="slider__photo">
+				<img src="img/gallery/img.jpg" alt="">
+			</div>
+		</div>
+		<div class="slider__control slider__control--prev slider__control--disabled">
+			<img src="img/gallery/gallery-prev.png" alt="">
+		</div>
+		<div class="slider__control slider__control--next">
+			<img src="img/gallery/gallery-next.png" alt="">
+		</div>
+	</div>
+
+	<div class="container">
+		<a href="index.html" class="back-to-results">← Вернуться к результатам поиска</a>
+	</div>
+
+	<div class="footer">
+		<div class="contaier">
+			<p>Учебный проект школы <a href="https://webcademy.ru/">WebCademy</a> с курса <a href="https://webcademy.ru/jscourse/">JavaScript разработка</a>. Проект выполнила <a href="#">Наталья Лысак</a>.</p>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/View.js"></script>
+	<script src="js/Model.js"></script>
+	<script src="js/object.js"></script>
+</body>
+
+</html>
