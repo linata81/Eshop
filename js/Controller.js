@@ -156,6 +156,7 @@
 
     //сортировка
     document.querySelector('[data-sort]').addEventListener('change', function(event){
+      pagination.currentPage = 1 //чтобы сортировка всегда отображалась с 1 страницы
       if(!this.value) {
         if(filters.sort !== null) {
           filters.sort = null
