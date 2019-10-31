@@ -213,23 +213,30 @@
     //обработчик кнопок пагинации
     document.querySelector('[data-pagination]').addEventListener('click', function(event){
       const number = parseInt(event.target.textContent)
-      
-      event.preventDefault()
 
-      if(number !== pagination.currentPage) {
-        pagination.currentPage = number
+      event.preventDefault()
+      
+      if(event.target.classList.contains("pagination__link")) {
+
+        switch(event.target.textContent) {
+          case 'Следующая':
+            if(pagination.currentPage !== pagination.commonPage && pagination.currentPage < pagination.commonPage) {
+              pagination.currentPage = pagination.currentPage + 1
+            }
+            break
+          case 'Предыдущая':
+            if(pagination.currentPage !== 1 && pagination.currentPage > 0) {
+              pagination.currentPage = pagination.currentPage - 1
+            }
+            break
+        }
         update()
       }
-
-      if(event.target.textContent === 'Следующая') {
-        console.log(pagination);
-        console.log(pagination.commonPage);
-
-        
-        // pagination.currentPage = pagination.currentPage + 1
-      }
-      else if(event.target.textContent === 'Предыдущая') {
-        console.log('Предыдущая');
+      else {
+        if(number !== pagination.currentPage) {
+          pagination.currentPage = number
+          update()
+        }
       }
     })
 
