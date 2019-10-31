@@ -213,12 +213,23 @@
     //обработчик кнопок пагинации
     document.querySelector('[data-pagination]').addEventListener('click', function(event){
       const number = parseInt(event.target.textContent)
-
+      
       event.preventDefault()
 
       if(number !== pagination.currentPage) {
         pagination.currentPage = number
         update()
+      }
+
+      if(event.target.textContent === 'Следующая') {
+        console.log(pagination);
+        console.log(pagination.commonPage);
+
+        
+        // pagination.currentPage = pagination.currentPage + 1
+      }
+      else if(event.target.textContent === 'Предыдущая') {
+        console.log('Предыдущая');
       }
     })
 
