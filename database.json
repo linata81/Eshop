@@ -9,7 +9,8 @@
     "floor": 4,
     "floorsHouse" : 12,
     "like": false,
-    "img" : "flat-plan.png"
+    "img" : "flat-plan.png",
+    "images": []
   },
   {
     "id": 2,

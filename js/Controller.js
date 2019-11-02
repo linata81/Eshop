@@ -53,6 +53,7 @@
       }
 
       filters.label = this.value
+      
       update()
     })
 
